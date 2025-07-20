@@ -219,9 +219,9 @@ nav {
   gap: 30px;
 }
 .skill {
-  background: #232526;
-  padding: 20px;
-  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
 }
 .skill span {
   font-weight: 600;
@@ -233,12 +233,35 @@ nav {
   height: 10px;
   margin-top: 10px;
   overflow: hidden;
+  position: relative;
+  display: block;
 }
 .skill-level {
   background: #00b894;
   height: 100%;
   border-radius: 8px;
   transition: width 1s;
+}
+.skill-percent {
+  display: inline-block;
+  margin-left: 14px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  background: rgba(24,26,27,0.85);
+  padding: 1px 10px;
+  border-radius: 12px;
+  min-width: 48px;
+  text-align: center;
+  margin-top: 6px;
+}
+@media (max-width: 600px) {
+  .skill-percent {
+    margin-left: 8px;
+    font-size: 0.95rem;
+    padding: 1px 7px;
+    min-width: 38px;
+  }
 }
 
 /* Projects Section */
